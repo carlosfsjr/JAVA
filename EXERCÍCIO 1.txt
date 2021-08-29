@@ -1,0 +1,13 @@
+public class Main
+{
+    public static void main (String[] args) {
+        double aumento, salario=2500, novoSalario, percentual=10;
+        
+        aumento = salario * percentual / 100;
+        novoSalario = salario + aumento;
+        
+        System.out.print("O valor do aumento é: "+aumento+"\n");
+        System.out.print("O valor do novo salário é: "+novoSalario);
+
+    }
+}

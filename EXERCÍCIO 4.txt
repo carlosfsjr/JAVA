@@ -1,0 +1,16 @@
+public class Main
+{
+    public static void main (String[] args) {
+        double precoFabrica=35000, percentualLucro=25, percentualImposto=15, lucroDistribuidor, valorImposto, precoFinal;
+        
+        lucroDistribuidor = precoFabrica * percentualLucro / 100;
+        valorImposto = precoFabrica * percentualImposto / 100;
+        precoFinal = precoFabrica + lucroDistribuidor + valorImposto;
+        
+        System.out.print("O valor de lucro do distribuidor é: "+lucroDistribuidor+"\n");
+        System.out.print("O valor do imposto é: "+valorImposto+"\n");
+        System.out.print("O valor final do veículo é: "+precoFinal);
+        
+
+    }
+}

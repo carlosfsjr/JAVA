@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main (String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        double precoFabrica, percentualLucro, percentualImposto, lucroDistribuidor, valorImposto, precoFinal;
+        
+        System.out.print("Informe o valor de fábrica do veículo: ");
+        precoFabrica = entrada.nextDouble();
+        
+        System.out.print("Informe o percentual de lucro do distribuidor: ");
+        percentualLucro = entrada.nextDouble();
+        
+        System.out.print("Informe o percentual de imposto: ");
+        percentualImposto = entrada.nextDouble();
+        
+        lucroDistribuidor = precoFabrica * percentualLucro / 100;
+        valorImposto = precoFabrica * percentualImposto / 100;
+        precoFinal = precoFabrica + lucroDistribuidor + valorImposto;
+        
+        System.out.print("O valor de lucro do distribuidor é: "+lucroDistribuidor+"\n");
+        System.out.print("O valor do imposto é: "+valorImposto+"\n");
+        System.out.print("O valor final do veículo é: "+precoFinal);
+        
+
+    }
+}

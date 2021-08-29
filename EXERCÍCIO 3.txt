@@ -1,0 +1,14 @@
+public class Main
+{
+    public static void main (String[] args) {
+        double rendimento, valorTotal, taxaJuros=3, valorDeposito=500;
+        
+        rendimento = valorDeposito * taxaJuros / 100;
+        valorTotal = valorDeposito + rendimento;
+        
+        System.out.print("O valor do redimento é: "+rendimento+"\n");
+        System.out.print("O valor total a receber é: "+valorTotal);
+        
+
+    }
+}
