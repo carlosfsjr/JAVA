@@ -1,0 +1,34 @@
+public class Main
+{
+    public static void main (String[] args) {
+        double precoFabrica=35000, percentualLucro=25, percentualImposto=15, lucroDistribuidor, valorImposto, precoFinal;
+        
+        lucroDistribuidor = calcularLucroDistribuidor(precoFabrica,percentualLucro);
+        valorImposto = calcularValorImposto(precoFabrica,percentualImposto);
+        precoFinal = calcularPrecoFinal(precoFabrica,lucroDistribuidor,valorImposto);
+        
+        System.out.print("O valor de lucro do distribuidor é: "+lucroDistribuidor+"\n");
+        System.out.print("O valor do imposto é: "+valorImposto+"\n");
+        System.out.print("O valor final do veículo é: "+precoFinal);
+        
+
+    }
+    public static double calcularLucroDistribuidor(double n1, double n2){
+        double lucro;
+        
+        lucro = n1 * n2 / 100;
+        return lucro;
+    }
+    public static double calcularValorImposto(double n3, double n4){
+        double imposto;
+        
+        imposto = n3 * n4 / 100;
+        return imposto;
+    }
+    public static double calcularPrecoFinal(double n5, double n6, double n7){
+        double pFinal;
+        
+        pFinal = n5 + n6 + n7;
+        return pFinal;
+    }
+}

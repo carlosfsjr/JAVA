@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main (String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        double salarioBase, gratificacao, imposto, salarioReceber;
+        
+        System.out.print("Informe o salário base: ");
+        salarioBase = entrada.nextDouble();
+        
+        gratificacao = calcularGratificacao(salarioBase);
+        imposto = calcularImposto(salarioBase);
+        salarioReceber = calcularSalarioReceber(salarioBase,gratificacao,imposto);
+        
+        System.out.print("O valor da gratificação é: "+gratificacao+"\n");
+        System.out.print("O valor do imposto a ser debitado é: "+imposto+"\n");
+        System.out.print("O valor do salário a reeber é: "+salarioReceber);
+
+    }
+        public static double calcularGratificacao(double n1){
+        double gtf;
+        
+        gtf = n1*5/100;
+        return gtf;
+    }
+    public static double calcularImposto(double n2){
+        double imp;
+        
+        imp = n2*7/100;
+        return imp;
+    }
+    public static double calcularSalarioReceber(double n3, double n4, double n5){
+        double salr;
+        
+        salr = n3 + n4 - n5;
+        return salr;
+    }
+}

@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main (String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        double rendimento, valorTotal, taxaJuros, valorDeposito;
+        
+        System.out.print("Informe o valor do depósito: ");
+        valorDeposito = entrada.nextDouble();
+        
+        System.out.print("Informe o valor da taxa de juros de rendimento: ");
+        taxaJuros = entrada.nextDouble();
+        
+        rendimento = calcularRendimento(valorDeposito,taxaJuros);
+        valorTotal = calcularValorTotal(valorDeposito,rendimento);
+        
+        System.out.print("O valor do redimento é: "+rendimento+"\n");
+        System.out.print("O valor total a receber é: "+valorTotal);
+        
+
+    }
+     public static double calcularRendimento(double n1, double n2){
+        double rend;
+        
+        rend = n1 * n2 / 100;
+        return rend;
+    }
+    public static double calcularValorTotal(double n3, double n4){
+        double vTotal;
+        
+        vTotal = n3 + n4;
+        return vTotal;
+    }
+}
