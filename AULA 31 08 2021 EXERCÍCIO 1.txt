@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] dados = new int[6];
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.println(" O nº de elementos do array é: "+dados.length);
+        
+        for (int i = 0; i < dados.length; i++ ) {
+            int cont = i +1;
+            System.out.print("Digite o valor inteiro para a posição["+cont+"]: ");
+            dados[i] = entrada.nextInt();
+        }
+         for (int e = 0; e < dados.length; e++ ) {
+             int eb = e + 1;
+            System.out.println("O valor para a posição ["+eb+"] é: "+dados[e]);
+            
+        }
+    }
+}
