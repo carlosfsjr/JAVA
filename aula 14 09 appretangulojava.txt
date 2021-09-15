@@ -1,0 +1,25 @@
+
+package principiosOO;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class AppRetangulo {
+
+ 
+    public static void main(String[] args) {
+        
+     
+        Retangulo R = new Retangulo();
+        
+        //Scanner entrada = new Scanner(System.in);
+       
+        //System.out.print("Informe o valor da base: ");
+        R.base = Integer.parseInt(JOptionPane.showInputDialog("Informe a base do retangulo:"));
+       // System.out.print("Informe o valor da altura: ");
+        R.altura = Integer.parseInt(JOptionPane.showInputDialog("Informe a altura do retangulo:"));
+                
+             
+            R.exibirArea();
+            R.exibirPerimetro();
+    }
+    
+}

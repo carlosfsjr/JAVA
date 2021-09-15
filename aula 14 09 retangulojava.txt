@@ -1,0 +1,24 @@
+
+package principiosOO;
+
+import javax.swing.JOptionPane;
+
+public class Retangulo {
+    public int base;
+    public int altura;
+    
+    Retangulo(){
+        
+    }
+    
+    public void exibirArea(){
+        int area = this.altura * this.base;
+        JOptionPane.showMessageDialog(null,"A área do retangulo é: "+area);
+    }
+    
+    public void exibirPerimetro(){
+        int p = 2*this.altura + 2*this.base;
+        JOptionPane.showMessageDialog(null,"O perímetro do retangulo é: "+p);
+    }
+}
+
