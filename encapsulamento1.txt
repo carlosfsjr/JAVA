@@ -1,0 +1,18 @@
+
+package Exercicio02;
+
+import Exercicio06.Retangulo;
+
+public class UsaRetangulo {
+
+    public static void main(String[] args) {
+        Retangulo R1 = new Retangulo();
+        
+        R1.setBase(7);
+        R1.setAltura(5);
+        
+        R1.exibeArea();
+        R1.exibePerimetro();
+    }
+    
+}
